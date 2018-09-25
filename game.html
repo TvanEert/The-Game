@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Artox</title>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+	</head>
+<body>
+	<script>
+		var v_start = prompt ("Do you want to start ? yes/no");
+
+		var v_yes = "yes";
+		var v_no = "no";
+		var v_dodge = "dodge";
+		var v_fight = "fight";
+		var v_serpents = "serpents";
+		var v_spiders = "spiders";
+		var v_freeze = "freeze";
+		var v_poison = "poison";
+		var v_rest = "rest";
+		var v_skip = "skip";
+		var v_left = "left";
+		var v_right = "right";
+		var i_herhaal = 0;
+
+			do {
+				if (v_start == v_yes) 
+					{
+					i_herhaal++;
+					} 
+				else if (v_start == v_no) 
+				{
+					alert ("Why did you load this page if you dont want to start ?");
+					v_start = prompt ("Do you want to start ? yes/no");
+				} 
+				if (i_herhaal == '0') 
+				{
+						alert ("choose one of the two options !!!");
+						v_start = prompt ("Do you want to start ? yes/no");
+				}
+			}while (i_herhaal == 0);
+		
+		var v_s1 = prompt ("Hey i'm the castle keeper, we have a big problem we are getting terrorised by ancient creatures. And we need you're help warior your the only one who can defeat them. So wil you help and save the city ? yes/no");
+ 
+			i_herhaal = 0;
+
+			do {
+				if (v_s1 == v_yes) 
+				{
+					i_herhaal++;
+				} 
+				else if (v_s1 == v_no) 
+				{
+					alert ("You did't help save the city so everyone including you died.");
+					location.reload(true);
+				} 
+				if (i_herhaal == '0')
+				{
+					alert ("choose one of the two options !!!");
+					v_s1 = prompt ("Hey i'm the castle keeper, we have a big problem we are getting terrorised by ancient creatures. And we need you're help warior your the only one who can defeat them. So wil you help and save the city ? yes/no");
+				}
+			}while (i_herhaal == 0);
+
+		var v_q1 = prompt ("You walk along a dark road suddenly you see a giant serpent man do you want to fight it or not ? fight/dodge")
+
+			i_herhaal = 0;
+			do {
+				if (v_q1 == v_fight ) 
+				{
+					i_herhaal++;
+				} 
+				else if (v_q1 == v_dodge) {
+					alert ("Giant serpent man attacked too fast to escape so you died.")
+					location.reload(true);
+				} 
+				if (i_herhaal == '0')
+				{
+					alert ("choose one of the two options !!!");
+					v_q1 = prompt ("You walk along a dark road suddenly you see a giant serpent man do you want to fight it 	or not ? fight/dodge");
+				}
+			}while (i_herhaal == 0);
+
+		var v_q2 = prompt ("You have slain the giant serpent man so you walk along into the path of the two headed giant do you choose to fight it ? fight/dodge")
+
+			i_herhaal = 0;
+			do {
+				if (v_q2 == v_dodge) 
+				{
+					i_herhaal++;
+				} 
+				else if (v_q2 == v_fight) {
+					alert ("You attacked the two headed giant but it overpowerd you so you should have dodge because his attack was slow."); 
+					location.reload(true);
+				} 
+				if (i_herhaal == '0')
+				{
+					alert ("choose one of the two options !!!");
+					v_q2 = prompt ("You have slain the giant serpent man so you walk along into the path of the two headed giant do you choose to fight it ? fight/dodge");
+				}
+			}
+			while (i_herhaal == 0);
+		
+		var v_q3 = prompt ("You defeated the two headed giant you need to choose if you jump into a serpent pit or go in a spider cave. serpents/spiders ");
+
+			i_herhaal = 0;
+			do {
+				if (v_q3 == v_spiders) 
+			{
+					i_herhaal++;
+				} 
+				else if (v_q3 == v_serpents) {
+					alert ("The serpents were poisones so you died because of it and you made the wrong choise")
+					location.reload(true);
+				} 
+				if (i_herhaal == '0')
+				{
+					alert ("choose one of the two options !!!");
+					v_q3 = prompt ("You defeated the two headed giant you need to choose if you jump into a serpent pit or go in a spider cave. serpents/spiders ");
+				}
+			}while (i_herhaal == 0);
+
+		var v_q4 = prompt ("You picked the spider cave and survived because they were harmless litlle spiders but at the end is a giant spider. freeze him or poison him what wil you choose. freeze/poison");
+
+			i_herhaal = 0;
+			do {
+				if (v_q4 == v_freeze) 
+				{
+					i_herhaal++;
+				} 
+				else if (v_q4 == v_poison) {
+					alert ("The spider was invonreble to poison you died");
+					location.reload(true);
+				} 
+				if (i_herhaal == '0')
+				{
+					alert ("choose one of the two options !!!");
+					v_q4 = prompt ("You picked the spider cave and survived because they were harmless litlle spiders but at the end is a giant spider. freeze him or poison him what wil you choose. freeze/poison");
+				}
+			}while (i_herhaal == 0);
+
+		var v_q5 = prompt ("You freezed the spider it wasn't able to moves so you killed it. You pass trough some mountains do you want to rest between the mountains ? yes/no");
+
+			i_herhaal = 0;
+			do {
+				if (v_q5 == v_no) 
+				{
+					i_herhaal++;
+				} 
+				else if (v_q5 == v_yes) {
+					alert ("When you were sleeping you got killed by a uknown enemie.");
+					location.reload(true);
+				} 
+				if (i_herhaal == '0')
+				{
+					alert ("choose one of the two options !!!");
+					v_q5 = prompt ("You freezed the spider it wasn't able to moves so you killed it. You pass trough some mountains do you want to rest between the mountains ? yes/no");
+				}
+			}while (i_herhaal == 0);
+
+		var v_q6 = prompt ("You didn't sleep and survived because of it and there are creatures wil you fight the group of draugrs ? fight/dodge ");
+
+			i_herhaal = 0;
+			do {
+				if (v_q6 == v_fight) 
+				{
+					i_herhaal++;
+				} 
+				else if (v_q6 == v_dodge) {
+					alert ("It was a group so there were to many to dodge you died.");
+					location.reload(true);
+				} 
+				if (i_herhaal == '0')
+				{
+					alert ("choose one of the two options !!!");
+					v_q6 = prompt ("You didn't sleep and survived because of it and there are creatures wil you fight the group of draugrs ? fight/dodge ");
+				}
+			}while (i_herhaal == 0);
+
+		var v_q7 = prompt ("If you tried to dodge there were to many of them so it wouldn't have worked so you made the right choise in the distance is a village do you want to rest there ? rest/skip");
+
+			i_herhaal = 0;
+			do {
+				if (v_q7 == v_rest) 
+				{
+					i_herhaal++;
+				} 
+				else if (v_q7 == v_skip) {
+					alert ("It was a group so there were to many to dodge.");
+					location.reload(true);
+				} 
+				if (i_herhaal == '0')
+				{
+					alert ("choose one of the two options !!!");
+					v_q7 = prompt ("If you tried to dodge there were to many of them so it wouldn't have worked so you made the right choise in the distance is a village do you want to rest there ? rest/skip");
+				}
+			}while (i_herhaal == 0);
+
+		var v_q8 = prompt ("Resting was the good choise if you would have skipped you would have died because of exhaustion. You step into the arena of the two headed dragon you wil need to defeat it to save the world. Will you try to dodge the first attack or wil you attack it ? fight/dodge");
+
+			i_herhaal = 0;
+			do {
+				if (v_q8 == v_dodge) 
+				{
+					i_herhaal++;
+				} 
+				else if (v_q8 == v_fight) {
+					alert ("His attack was to powerfull to take you died.");
+					location.reload(true);
+				} 
+				if (i_herhaal == '0')
+				{
+					alert ("choose one of the two options !!!");
+					v_q8 = prompt ("Resting was the good choise if you would have skipped you would have died because of exhaustion. You step into the arena of the two headed dragon you wil need to defeat it to save the world. Will you try to dodge the first attack or wil you attack it ? fight/dodge");
+				}
+			}while (i_herhaal == 0);
+
+		var v_q9 = prompt ("The first attack was strong so it is good you dodged it now attack it to finnis him of and save the world. wil you attack left or right? left/right");
+
+			i_herhaal = 0;
+			do {
+				if (v_q9 == v_right) 
+				{
+					i_herhaal++;
+				} 
+				else if (v_q9 == v_left) {
+					alert ("He attack from the left you got hit and you died.");
+					location.reload(true);
+				} 
+				if (i_herhaal == '0')
+				{
+					alert ("choose one of the two options !!!");
+					var v_q9 = prompt ("The first attack was strong so it is good you dodged it now attack it to finnis him of and save the world. wil you attack left or right? left/right");
+				}
+			}while (i_herhaal == 0);
+	
+		alert ("Congratz you defeated the two headed dragon and saved the world you won the game Artox ")
+	
+
+	</script>
+</body>
+</html>
